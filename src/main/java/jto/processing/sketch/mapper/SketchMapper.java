@@ -303,6 +303,11 @@ public class SketchMapper {
         return surfaceMapper.getSketchList();
     }
 
+    public List<SuperSurface> getSurfaces() {
+        return surfaceMapper.getSurfaces();
+    }
+
+
     /**
      * callback function for processing's load dialog.
      * @param file the file to load.
