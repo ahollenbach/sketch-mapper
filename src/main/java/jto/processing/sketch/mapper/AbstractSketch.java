@@ -24,6 +24,9 @@ public abstract class AbstractSketch implements Sketch {
      */
     protected final PApplet parent;
 
+    public int sHeight;
+    public int sWidth;
+
     /**
      * Constructor
      *
@@ -55,6 +58,22 @@ public abstract class AbstractSketch implements Sketch {
     @Override
     public PGraphics getPGraphics() {
         return graphics;
+    }
+
+    @Override
+    public void setDimensions(int w, int h) {
+      this.sWidth = w;
+      this.sHeight = h;
+    }
+
+    @Override
+    public void focus() {
+      // do nothing
+    }
+
+    @Override
+    public void unfocus() {
+      // do nothing
     }
 
     @Override

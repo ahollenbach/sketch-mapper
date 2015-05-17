@@ -27,7 +27,7 @@ public class SketchMapper {
     int mostRecentSurface = 0;
     // SurfaceMapper variables
     private PGraphics graphicsOffScreen;
-    public SurfaceMapper surfaceMapper;
+    private SurfaceMapper surfaceMapper;
     private QuadOptionsMenu quadOptions;
     private BezierOptionsMenu bezierOptions;
     private ProgramOptionsMenu programOptions;
