@@ -26,6 +26,7 @@ public abstract class AbstractSketch implements Sketch {
 
     public int sHeight;
     public int sWidth;
+    public boolean hideOutput;
 
     /**
      * Constructor
@@ -39,6 +40,7 @@ public abstract class AbstractSketch implements Sketch {
     public AbstractSketch(final PApplet parent, final int width, final int height) {
         this.parent = parent;
         this.graphics = parent.createGraphics(width, height, PConstants.OPENGL);
+        hideOutput = false;
     }
 
     @Override
